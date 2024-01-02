@@ -1,0 +1,84 @@
+# Checklist
+- [x] Bundle Identifier
+- [x] Asset / DarkMode
+- [x] Launch Screen
+- [x] Entry Point
+- [x] Simulator Build
+- [x] Info.plist / Privacy
+- [x] UIKit
+- [x] UIViewController
+- [x] UIView
+- [x] StackView
+- [x] UITabBarController / UITabBar / UITabBarItem
+- [x] UINavigationController / UINavigationBar / UINavigationItem
+
+
+
+# Entry Point
+### Entry Point가 무엇이며, 왜 필요할까?
+- LaunchScreen 이후 가장 먼저 나올 화면을 지정하는 것
+- Entry Point(시작점)을 지정해주지 않으면 Storyboard가 존재하여도 불러오지 못하므로 꼭 지정해주어야 함
+
+### Entry Point가 없으면 어떻게 될까?
+```
+**Failed to instantiate the default view controller for UIMainStoryboardFile 'Main' - perhaps the designated entry point is not set?**
+```
+위와 같이 MainStoryboard에서 `Entry Point`를 찾지 못하여 ViewController를 인스턴스화 시키지 못하였다고 디버그 창에 에러 발생
+App 화면은 검정색 화면 발생
+
+### Entry Point 삭제 후, 앱이 다시 정상적으로 동작할 수 있도록 Entry Point를 지정하는 방법
+- ViewController 지정 후 `Is Initial View Controller` 체크
+
+
+# UI 복습하기
+
+### UILabel 
+- [x] Text
+- [x] Font
+- [x] Alignment
+- [x] Lines
+- [x] Line Break
+
+### UIButton
+- [x] Type
+- [x] Style
+- [x] Title
+- [x] SubTitle
+- [x] Alignment
+- [x] Foreground
+- [x] Background
+
+### UITextField
+- [x] Text
+- [x] Color
+- [x] Font
+- [x] Alignment
+- [x] Placeholder
+- [x] Border Style
+- [x] Clear Button
+- [x] Keyboard Type
+- [x] Return Key
+	- 엔터키 문구
+- [x] Secure Text Entry 
+	- 입력문자 *** 표시
+### UIImageView
+- [x] Image
+- [x] Content Mode
+
+### UISwitch
+- [x] State
+- [x] On Tint
+- [x] Thumb Tint
+
+### UISegmenttedControl
+- [x] Selected Tint
+- [x] Segments
+- [x] Segment
+- [x] Title
+- [x] Image
+
+### 새로운 Xcode Project 생성해 Netflix UI 구성하기
+- [x] 구성하기
+
+### 네비게이션 컨트롤러와 탭바 컨트롤러 실습하기
+- [x] 실습하기
